@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(105, 96, 111);
+    text-align: center;
+}
+
+h1 {
+    font-family: monospace, 'Times New Roman';
+    font-style: italic;
+    color: rgb(203, 140, 15);
+    text-shadow: 2px 1px 2px rgb(53, 52, 49);
+    text-align: center;
+    padding: 15px 0; 
+    background-color: rgb(53, 52, 49)
+}
+
+h3 {
+    font-family: monospace, 'Times New Roman';
+    color: rgb(0, 197, 174);
+    text-shadow: 2px 1px 5px  rgb(53, 52, 49);
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgb(53, 52, 49);
+}
+
+p {
+    font-family: 'Times New Roman';
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+img {
+    object-fit: cover;
+    max-width: 300px;
+    max-height: 300px;
+    border: 3px solid rgb(53, 52, 49);
+    border-radius: 3px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
