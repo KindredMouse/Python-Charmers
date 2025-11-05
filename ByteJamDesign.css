@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(1, 4, 15);
+}
+
+h1 {
+    font-family: monospace, 'Times New Roman';
+    font-style: italic;
+    color: rgb(224, 160, 33);
+    text-shadow: 2px 1px 2px rgb(81, 49, 5);
+}
+
+h3 {
+    font-family: monospace, 'Times New Roman';
+    color: rgb(0, 197, 174);
+    text-shadow: 2px 1px 5px rgb(113, 15, 0);
+}
+
+p {
+    font-family: 'Times New Roman';
+    color: rgb(255, 255, 255);
+}
+
+img {
+    object-fit: cover;
+    max-width: 300px ;
+    max-height: 300px;
+    border: 3px solid rgb(117, 84, 2);
+    border-radius: 3px;
+}
