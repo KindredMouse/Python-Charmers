@@ -1,0 +1,82 @@
+h1{
+    text-align: center;
+    font-family: monospace, 'Times New Roman';
+    font-style: italic;
+    color: rgb(224, 160, 33);
+    text-shadow: 2px 1px 2px rgb(81, 49, 5);
+}
+h2{
+    text-align: center;
+    font-family: monospace, 'Times New Roman';
+    color: rgb(0, 197, 174);
+    text-shadow: 2px 1px 5px rgb(113, 15, 0);
+}
+
+
+#MGTable{
+    display: flex;
+    justify-content: center;
+}
+body{
+    background-color: lightgrey;
+}
+.Image-Holder{
+    position: relative;
+    width: 200;
+    height: 350;
+}
+.Image-Holder .image,.Image-Holder .Text-Hover{
+    transition: opacity 0.5s ease-in-out;
+}
+.Image-Holder .Text-Hover{
+    position: absolute;
+    top:0;
+    left:0;
+    opacity:0;
+}
+.Image-Holder:hover .image{
+    opacity: 0;
+}
+.Image-Holder:hover .Text-Hover{
+    opacity: 1;
+}
+th{
+   padding-right: 50;
+   padding-left: 50;
+   padding-bottom: 50;
+}
+p {
+    font-family: 'Times New Roman';
+    color: rgb(255, 255, 255);
+   
+}
+img{
+    border: 3px solid rgb(117, 84, 2);
+    border-radius: 3px;
+}
+h3{
+    font-family: monospace, 'Times New Roman';
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    color: rgb(0, 197, 174);
+    text-shadow: 2px 1px 5px rgb(113, 15, 0);
+}
+#contains-all{
+    margin:0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.page-Border{
+    margin:0;
+    padding: 0;
+    width: 200px;
+    background-image: url("/Mythology/Images/border-pattern.png");
+    background-repeat: repeat-y;
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+}
