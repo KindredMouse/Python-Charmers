@@ -29,3 +29,27 @@ body {
     text-shadow: 2px 1px 5px rgb(113, 15, 0);
     font-size: 30px;
 }
+
+img {
+    object-fit: cover;
+    border: 3px solid rgb(117, 84, 2);
+    border-radius: 3px;
+}
+
+p {font-family: 'Times New Roman';
+    color: rgb(255, 255, 255);
+} 
+
+.Burial {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+#left-burial {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+}
+
