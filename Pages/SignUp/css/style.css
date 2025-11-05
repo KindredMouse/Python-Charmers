@@ -1,7 +1,8 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: radial-gradient(#e38a9b, #b44d63);
+  /* Change background color to every other page*/
+  background: radial-gradient(#b7ac16, #d89d07);
   color: #fff;
 }
 
@@ -14,21 +15,23 @@ body {
   grid-template-columns: 1fr 1fr;
   border-radius: 16px;
   overflow: hidden;
-  background: #0f1725;
+  background: #aeaeae;
 }
-
-.left {
-  background: linear-gradient(#56e0cf, #2fc6b4);
-  padding: 30px;
+/* IMAGE STYLING */
+.left-img {
+  width: 100%;          
+  height: 100%;        
+  object-fit: cover;    
+  display: block;       
 }
 
 .right {
-  background: linear-gradient(#121a2a, #1a2435);
+  background: linear-gradient(#233575, #c7a161);
   padding: 40px;
   position: relative;
 }
 
-/* HEADER TITLE */
+/* MY HEADER TITLE */
 h2 {
   text-align: center;
   margin-top: 60px;
@@ -51,7 +54,7 @@ label {
   gap: 6px;
 }
 
-/* INPUTS AND TEXTAREA */
+/* INPUTS AND TEXT AREA */
 input, textarea {
   background: #2a3547;
   border: none;
@@ -67,7 +70,7 @@ input:focus, textarea:focus {
 
 /* SEND BUTTON */
 .submit {
-  background: linear-gradient(90deg, #69e6d6, #3fd3c2);
+  background: linear-gradient(90deg, #fcffff, #fafffe);
   color: #053b35;
   border: none;
   padding: 12px 18px;
@@ -75,3 +78,20 @@ input:focus, textarea:focus {
   font-weight: bold;
   cursor: pointer;
 }
+/* FORM/ CONTACT STYLE*/
+form {
+  font-family: monospace, 'Times New Roman';
+    font-style: italic;
+    color: rgb(224, 160, 33);
+    text-shadow: 2px 1px 2px rgb(81, 49, 5);
+}
+
+h2 {
+  font-family: monospace, 'Times New Roman';
+    font-style: italic;
+    color: rgb(224, 160, 33);
+    text-shadow: 2px 1px 2px rgb(81, 49, 5);
+    font-size: 25px;
+}
+
+
