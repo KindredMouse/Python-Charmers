@@ -11,8 +11,6 @@ h2{
     color: rgb(0, 197, 174);
     text-shadow: 2px 1px 5px rgb(113, 15, 0);
 }
-
-
 .MGTable{
     display: flex;
     justify-content: center;
@@ -77,8 +75,6 @@ h3{
     background-image: url("/Pages/Mythology/Images/border_pattern.png");
     background-repeat: repeat-y;
 }
-
-
 body{
     padding: 0;
     margin: 0;
@@ -110,6 +106,9 @@ body{
     justify-content: center;
     grid-template-columns: auto auto auto auto;
 }
+.myth-image-switch-first{
+    display: none;
+}
 @media  screen and (max-width: 800px) {
     .container{
         grid-template-columns: auto auto;
@@ -133,6 +132,14 @@ body{
     .myth-image{
         margin-left: 50px;
     }
+    .myth-image-switch-first{
+        display:initial;
+        margin-left: 50px;
+    }
+    .myth-image-switch-last{
+
+        display: none;
+    }
  
 }
 @media screen and (max-width:400px){
@@ -142,5 +149,22 @@ body{
     .the-Line{
         margin-left:0px;
     }
+
+}
+.dropDown{
+    position: relative;
+    display: inline-block;
+}
+.button{
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.dropHolder{
+    display: none;
+    position:absolute;
+    top: 100%;
+    left:0;
+    min-width: 500px;
 
 }
