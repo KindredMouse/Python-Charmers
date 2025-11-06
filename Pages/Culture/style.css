@@ -45,22 +45,6 @@ img {
     margin-right: auto;
 }
 
-.vertical-border {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 15px;
-    background-color: rgb(53, 52, 49);
-    z-index: 10;
-}
-
-.left-border {
-    left: 0;
-}
-
-.right-border {
-    right: 0;
-}
 .highlight {
   background-color: rgb(84, 82, 78);
   padding: 20px;
