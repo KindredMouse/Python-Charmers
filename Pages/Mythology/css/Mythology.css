@@ -13,12 +13,12 @@ h2{
 }
 
 
-#MGTable{
+.MGTable{
     display: flex;
     justify-content: center;
 }
 body{
-    background-color: grey;
+    background-color: rgb(1, 4, 15);
 }
 .Image-Holder{
     position: relative;
@@ -72,7 +72,7 @@ h3{
     margin:0;
     padding: 0;
     width: 200px;
-    background-image: url("/Pages/Mythology/Images/border-pattern.png");
+    background-image: url("/Pages/Mythology/Images/border_pattern.png");
     background-repeat: repeat-y;
 }
 
@@ -88,4 +88,18 @@ body{
     background-repeat: no-repeat;
     height: 5px;
     background-image:url("/Pages/Mythology/Images/the-Line.png") ;
+}
+.Myth-Body{
+    
+    display: flex;
+    justify-content: center;
+   
+}
+.myth-text-holder{
+    width: 500;
+    margin-left: 50px;
+    margin-right: 500px;
+}
+#Myths-Overall{
+    margin-top: 50px;
 }
