@@ -62,7 +62,7 @@ text-align:center;
 @media (max-width: 600px) {
     h1 {
         text-align: center;
-        margin-left: 0;
-        margin-right: 0;
+        margin-left: 20;
+        margin-right: 20;
     }
 }
