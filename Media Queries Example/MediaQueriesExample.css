@@ -1,0 +1,23 @@
+@media screen and (min-width: 1px) and (max-width: 800px) {
+    .small {
+        background-color: green;
+        color: black;
+    }
+
+    .big {
+        color: blue;
+        background-color: white;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 2700px) {
+    .small {
+        color: blue;
+        background-color: white;
+    }
+    
+    .big {
+        background-color: green;
+        color: black;
+    }
+}
