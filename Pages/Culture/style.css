@@ -1,6 +1,9 @@
 body {
     background-color: rgb(105, 96, 111);
     text-align: center;
+    margin: 0;
+    position: relative;
+    padding: 0;
 }
 
 h1 {
@@ -10,13 +13,14 @@ h1 {
     text-shadow: 2px 1px 2px rgb(53, 52, 49);
     text-align: center;
     padding: 15px 0; 
-    background-color: rgb(53, 52, 49)
+    background-color: rgb(53, 52, 49);
+    margin-top: 0;
 }
 
 h3 {
     font-family: monospace, 'Times New Roman';
     color: rgb(0, 197, 174);
-    text-shadow: 2px 1px 5px  rgb(53, 52, 49);
+    text-shadow: 2px 1px 5px rgb(53, 52, 49);
     text-align: center;
     padding: 10px 0;
     background-color: rgb(53, 52, 49);
@@ -26,6 +30,7 @@ p {
     font-family: 'Times New Roman';
     color: rgb(255, 255, 255);
     text-align: center;
+    padding: 0 60px; /* moves text away from vertical borders */
 }
 
 img {
@@ -37,4 +42,51 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.vertical-border {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 15px;
+    background-color: rgb(53, 52, 49);
+    z-index: 10;
+}
+
+.left-border {
+    left: 0;
+}
+
+.right-border {
+    right: 0;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: 5px;
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 20px;
+        padding: 10px 0;
+    }
+
+    h3 {
+        font-size: 16px;
+        padding: 8px 0;
+    }
+
+    p {
+        padding: 0 15px;
+        font-size: 14px;
+    }
+
+    img {
+        max-width: 90%;
+        height: auto;
+    }
+    .vertical-border {
+        width: 10px;
+    }
 }
