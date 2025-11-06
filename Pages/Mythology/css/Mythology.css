@@ -24,6 +24,7 @@ body{
     position: relative;
     width: 200;
     height: 350;
+
 }
 .Image-Holder .image,.Image-Holder .Text-Hover{
     transition: opacity 0.5s ease-in-out;
@@ -57,10 +58,11 @@ img{
 }
 h3{
     font-family: monospace, 'Times New Roman';
-    margin-bottom: 0;
+    margin-bottom: 3;
     padding-bottom: 5px;
     color: rgb(0, 197, 174);
     text-shadow: 2px 1px 2px rgb(113, 15, 0);
+    text-align: center;
 }
 #contains-all{
     margin:0;
@@ -96,10 +98,15 @@ body{
    
 }
 .myth-text-holder{
-    width: 500;
+    width: 600px;
     margin-left: 50px;
-    margin-right: 500px;
+    margin-right: 50px;
 }
 #Myths-Overall{
     margin-top: 50px;
+}
+.container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto auto;
 }
