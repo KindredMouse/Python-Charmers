@@ -63,8 +63,7 @@ text-align:center;
 @media (max-width: 600px) {
     .site-footer {
         font-size: 14px;           /* Smaller text */
-        padding: 15px 0;           /* Less padding */
+        padding: 30px 0;           /* Less padding */
         background-color: #313131;    /* Different background */
-        text-align:center;
     }
 }
