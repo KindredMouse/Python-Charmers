@@ -60,6 +60,11 @@ img {
 .right-border {
     right: 0;
 }
+.highlight {
+  background-color: rgb(84, 82, 78);
+  padding: 20px;
+  border-radius: 10px;
+}
 
 @media screen and (max-width: 600px) {
     body {
