@@ -30,7 +30,7 @@ p {
     font-family: 'Times New Roman';
     color: rgb(255, 255, 255);
     text-align: center;
-    padding: 0 60px; /* ✅ moves text away from vertical borders */
+    padding: 0 60px; /* moves text away from vertical borders */
 }
 
 img {
@@ -59,4 +59,34 @@ img {
 
 .right-border {
     right: 0;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: 5px;
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 20px;
+        padding: 10px 0;
+    }
+
+    h3 {
+        font-size: 16px;
+        padding: 8px 0;
+    }
+
+    p {
+        padding: 0 15px;
+        font-size: 14px;
+    }
+
+    img {
+        max-width: 90%;
+        height: auto;
+    }
+    .vertical-border {
+        width: 10px;
+    }
 }
