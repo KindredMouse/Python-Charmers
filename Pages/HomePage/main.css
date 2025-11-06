@@ -1,35 +1,230 @@
+/* Header */
 h1 {
     font-family: monospace, 'Times New Roman';
     font-style: italic;
     color: rgb(224, 160, 33);
     text-shadow: 2px 1px 2px rgb(81, 49, 5);
-    margin: 0 0 10px 0;
+    margin: 0 0 20px 0;
+    transform: perspective(500px) rotateX(10deg);
+    text-align: center;
 }
 
+h3 {
+    font-family: monospace, 'Times New Roman';
+    color: rgb(0, 197, 174);
+    text-shadow: 2px 1px 5px rgb(113, 15, 0);
+    text-align: center;
+}
+
+/* Body */
 body {
+    display: inline-grid;
+    grid-template-rows: 1fr;
     background-color: #000;
+    width: 100%;
     margin: 0;
     padding: 20px;
     color: #fff;
     font-family: 'Times New Roman', serif;
 }
 
+/* Layout container */
+.format {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Image Section */
 .media {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
     max-width: 900px;
+    margin: 0 auto;
+    perspective: 1000px; /* 3D depth */
 }
 
 .media img {
-    object-fit: cover;
-    width: 300px;
+    width: 500px;
     height: auto;
-    border-radius: 4px;
+    border-radius: 8px;
+    transform: translateZ(50px) rotateX(5deg) rotateY(-5deg);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-p {
-    color: #fff;
-    margin: 0;
+.media img:hover {
+    transform: translateZ(80px) rotateX(0deg) rotateY(0deg);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.9);
+}
+
+.media p {
+    max-width: 550px;
     line-height: 1.5;
 }
+
+/* Video Section */
+.video-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.video-section video {
+    width: 700px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.video-section p {
+    margin-top: 15px;
+    text-align: center;
+    max-width: 500px;
+}
+
+/* PyScript Fact Section */
+.fact-section {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.fact-section h2 {
+    color: rgb(224, 160, 33);
+    font-family: monospace, 'Times New Roman';
+    text-shadow: 1px 1px 2px rgb(81, 49, 5);
+}
+
+.fact-section button {
+    background-color: rgb(0, 197, 174);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: monospace;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.fact-section button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+#fact-output {
+    margin-top: 15px;
+    font-size: 18px;
+    color: gold;
+    text-shadow: 1px 1px 3px black;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+#fact-output.show {
+    opacity: 1;
+}
+
+/* ============================= */
+/*        RESPONSIVE DESIGN      */
+/* ============================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    body {
+        padding: 15px;
+    }
+
+    .media img {
+        width: 400px;
+    }
+
+    .video-section video {
+        width: 500px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .format {
+        grid-template-columns: 1fr;
+    }
+
+    .media {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .media img {
+        width: 90%;
+        margin: 0 auto;
+        transform: none;
+    }
+
+    .media p {
+        text-align: center;
+        font-size: 1rem;
+        margin: 10px;
+    }
+
+    .video-section video {
+        width: 90%;
+    }
+
+    .fact-section button {
+        width: 80%;
+        padding: 12px;
+        font-size: 18px;
+    }
+
+    #fact-output {
+        font-size: 16px;
+        padding: 0 15px;
+    }
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 0.9rem;
+    }
+
+    .video-section p {
+        font-size: 0.9rem;
+    }
+
+    .fact-section h2 {
+        font-size: 1.2rem;
+    }
+
+    .fact-section button {
+        font-size: 16px;
+    }
+}
+
