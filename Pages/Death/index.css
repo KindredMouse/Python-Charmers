@@ -9,8 +9,8 @@ body {
     color: white;
 }
 
-.header {
-    display: inline-flex;
+.title {
+    display: inline-grid;
     justify-content: center;
     align-items: center;
     font-family: monospace, 'Times New Roman';
@@ -24,7 +24,7 @@ body {
     border-radius: 5px;
 }
 
-#subheadings {
+#subheading {
     font-family: monospace, 'Times New Roman';
     color: rgb(0, 197, 174);
     text-shadow: 2px 1px 5px rgb(113, 15, 0);
@@ -56,7 +56,7 @@ img {
     display: grid;
     grid-template-rows: 15% 1fr 80% 1fr;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     margin-top: 30px;
     background-color:rgb(46, 1, 1);
     border: 3px solid rgb(19, 1, 0);
@@ -89,7 +89,7 @@ img {
 
 
 .Afterlife {
-   display: grid;
+    display: grid;
     grid-template-rows: 15% 1fr 80% 1fr;
     justify-content: center;
     align-items: center;
@@ -105,15 +105,16 @@ img {
 
 #right-after {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
+    grid-template-rows: 20% 1fr 80% 1fr;
+    justify-content: row-reverse;
     text-align: left;
     align-items: center;
+    margin: 30px 30px;
 }
 
 #after-headings {
     display: flex;
-    background-color: rgba(135, 118, 59, 0.191);
+    background-color:rgba(135, 118, 59, 0.191);
     border: 3px solid rgb(10, 3, 1);
     border-radius: 5px;
     justify-content: center;
