@@ -4,6 +4,7 @@ body {
     margin: 0;
     position: relative;
     padding: 0;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -30,7 +31,7 @@ p {
     font-family: 'Times New Roman';
     color: rgb(255, 255, 255);
     text-align: center;
-    padding: 0 60px; /* moves text away from vertical borders */
+    padding: 0 60px;
 }
 
 img {
