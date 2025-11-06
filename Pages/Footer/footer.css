@@ -29,11 +29,11 @@ h4 {
 p {
     font-family: 'Times New Roman';
     color: rgb(255, 255, 255);
-    text-align:center;
+    
+text-align:center;
     margin-right: 50px;
     margin-left: 50px;
     margin-bottom: 0;
-
 
 }
 #footer-format{
@@ -64,6 +64,7 @@ p {
     .site-footer {
         font-size: 14px;           /* Smaller text */
         padding: 15px 0;           /* Less padding */
-        background-color: #555;    /* Different background */
+        background-color: #313131;    /* Different background */
+        text-align:center;
     }
 }
