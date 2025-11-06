@@ -1,56 +1,37 @@
 body {
     background-color: rgb(62, 62, 63);
+    font-family: 'Times New Roman', monospace;
+    margin: 0;
+    padding: 0;
 }
 
-
+/* Headings */
 h1 {
-    font-family: monospace, 'Times New Roman';
     font-style: italic;
     color: rgb(224, 160, 33);
     text-shadow: 2px 1px 2px rgb(81, 49, 5);
-    text-align:center;
+    text-align: center;
 }
 
-
 h3 {
-    font-family: monospace, 'Times New Roman';
     color: rgb(0, 197, 174);
     text-shadow: 2px 1px 5px rgb(113, 15, 0);
-    text-align:center;
+    text-align: center;
 }
 
 h4 {
-    font-family: monospace, 'Times New Roman';
     color: rgb(255, 255, 255);
-
-    text-align:center;
+    text-align: center;
 }
 
+/* Paragraphs */
 p {
-    font-family: 'Times New Roman';
     color: rgb(255, 255, 255);
-    
-text-align:center;
-    margin-right: 50px;
-    margin-left: 50px;
-    margin-bottom: 0;
-
-}
-#footer-format{
-    display:flex ;
-    justify-content: space-evenly;
-}
-.email{
-    margin: 0;
-    padding: 0;
-    font-size: 12px;
-    font-family: 'Times New Roman';
-    color: rgb(255, 255, 255);
-    text-align:center;
-    margin-right: 50px;
-    margin-left: 50px;
+    text-align: center;
+    margin: 0 50px 0 50px;
 }
 
+/* Footer Container */
 .site-footer {
     background-color: #333;
     color: white;
@@ -59,34 +40,40 @@ text-align:center;
     font-size: 18px;
 }
 
+/* Footer Inner Layout */
+#footer-format {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; /* ensures items wrap on small screens */
+    padding: 10px 20px;
+}
+
+/* Footer Email or Links */
+.email {
+    font-size: 12px;
+    margin: 5px 50px;
+    color: white;
+    text-align: center;
+}
+
+/* Responsive Design for Mobile */
 @media (max-width: 600px) {
     body {
         display: flex;
         flex-direction: column;
         justify-content: center;  /* vertical centering */
         align-items: center;      /* horizontal centering */
-        min-height: 100vh;        /* full viewport height */
-        margin: 0;
-        padding: 0;
+        min-height: 100vh;
     }
 
-    h1 {
+    p, .email {
+        width: 90%;
+        margin: 5px auto;
         text-align: center;
-        margin: 0 0 20px 0; /* optional: space below heading */
     }
 
-    p {
-        width: 90%; /* keep paragraphs within screen */
-        text-align: center; /* optional */
+    #footer-format {
+        flex-direction: column;
+        align-items: center;
     }
-
-    .footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: red;
-   color: white;
-   text-align: center;
-}
 }
