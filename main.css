@@ -188,6 +188,9 @@ img{
 
 /* Mobile Phones */
 @media (max-width: 768px) {
+     #header-push{
+        margin-top:50px;
+    }
     body {
         padding: 10px;
     }
