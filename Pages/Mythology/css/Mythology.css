@@ -10,6 +10,7 @@ h2{
     font-family: monospace, 'Times New Roman';
     color: rgb(0, 197, 174);
     text-shadow: 2px 1px 5px rgb(113, 15, 0);
+    font-size: 30px;
 }
 .MGTable{
     display: flex;
@@ -39,11 +40,6 @@ body{
 .Image-Holder:hover .Text-Hover{
     opacity: 1;
 }
-th{
-   padding-right: 50;
-   padding-left: 50;
-   padding-bottom: 50;
-}
 p {
     font-family: 'Times New Roman';
     color: rgb(255, 255, 255);
@@ -56,11 +52,14 @@ img{
 }
 h3{
     font-family: monospace, 'Times New Roman';
-    margin-bottom: 3;
-    padding-bottom: 5px;
+    margin-bottom: 0px;
+    margin-left: 50px;
+    margin-right:50px;
+    font-size: 20px;
     color: rgb(0, 197, 174);
     text-shadow: 2px 1px 2px rgb(113, 15, 0);
     text-align: center;
+    background-color: rgb(98, 83, 0);
 }
 #contains-all{
     margin:0;
@@ -91,6 +90,14 @@ body{
     
     display: flex;
     justify-content: center;
+    background-color: rgb(67, 67, 67);
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-style: solid;
+    border-color: rgb(151, 129, 0);
    
 }
 .myth-text-holder{
@@ -103,6 +110,7 @@ body{
 }
 .container{
     display: grid;
+    gap: 15px;
     justify-content: center;
     grid-template-columns: auto auto auto auto;
 }
@@ -120,7 +128,7 @@ body{
     }   
     .the-Line{
         width: 400px;
-        margin-left: 5px;
+        margin-left: 50px;
     }
     .myth-text-holder{
         width: 300px;
@@ -147,7 +155,7 @@ body{
         grid-template-columns: auto;
     }
     .the-Line{
-        margin-left:0px;
+        margin-left:50px;
     }
 
 }
@@ -155,7 +163,7 @@ body{
     position: relative;
     display: inline-block;
 }
-.button{
+#MajorGodsButton{
     font-size: 16px;
     cursor: pointer;
     border-radius: 3px;
@@ -166,5 +174,7 @@ body{
     top: 100%;
     left:0;
     min-width: 500px;
-
+}
+#MajorHeadings{
+    font-size: 60px;
 }
