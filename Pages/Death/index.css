@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(to bottom, rgb(46, 1, 1), rgb(5, 0, 18));
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(5, 0, 18));
     display: grid;
     grid-auto-rows: auto;
     justify-items: center;
@@ -39,9 +39,9 @@ body {
 
 p {
     color: white;
-    line-height: 1.6;
+    line-height: 1.25;
     margin: 10px 0;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .Burial, .Afterlife, .Rob {
@@ -83,7 +83,7 @@ p {
     #left-burial, #right-after, #left-rob {
         display: flex;
         flex-direction: row;
-        align-items: flex-start;
+        align-items: center;
         justify-content: space-between;
         gap: 25px;
         text-align: left;
@@ -124,6 +124,8 @@ p {
     p {
         font-size: 16px;
         line-height: 1.5;
+        text-align: left;
+        padding-bottom: 10px;
     }
 
     img {

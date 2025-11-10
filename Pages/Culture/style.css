@@ -1,9 +1,10 @@
 body {
-    background-color: rgb(105, 96, 111);
+    background-color: rgb(4, 4, 4);
     text-align: center;
     margin: 0;
     position: relative;
     padding: 0;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -30,7 +31,7 @@ p {
     font-family: 'Times New Roman';
     color: rgb(255, 255, 255);
     text-align: center;
-    padding: 0 60px; /* moves text away from vertical borders */
+    padding: 0 60px;
 }
 
 img {
@@ -44,21 +45,10 @@ img {
     margin-right: auto;
 }
 
-.vertical-border {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 15px;
-    background-color: rgb(53, 52, 49);
-    z-index: 10;
-}
-
-.left-border {
-    left: 0;
-}
-
-.right-border {
-    right: 0;
+.highlight {
+  background-color: rgb(84, 82, 78);
+  padding: 20px;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 600px) {
