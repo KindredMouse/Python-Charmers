@@ -163,6 +163,10 @@ body{
         width: 200px;
         margin-left:100px;
     }
+    .Myth-Body{
+        margin-right: 0px;
+        margin-left: 0px;
+    }
 
 }
 .dropDown{
