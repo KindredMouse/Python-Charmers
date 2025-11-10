@@ -5,7 +5,7 @@ body {
     padding: 0;
 }
 
-/* Headings */
+/* -------------------- Headings -------------------- */
 h1 {
     font-style: italic;
     color: rgb(224, 160, 33);
@@ -24,14 +24,14 @@ h4 {
     text-align: center;
 }
 
-/* Paragraphs */
+/* -------------------- Paragraphs -------------------- */
 p {
     color: rgb(255, 255, 255);
     text-align: center;
     margin: 0 50px 0 50px;
 }
 
-/* Footer Container */
+/* -------------------- Footer Container -------------------- */
 .site-footer {
     background-color: #333;
     color: white;
@@ -40,7 +40,7 @@ p {
     font-size: 18px;
 }
 
-/* Footer Inner Layout */
+/* Inner Footer Layout */
 #footer-format {
     display: flex;
     justify-content: space-evenly;
@@ -56,9 +56,20 @@ p {
     text-align: center;
 }
 
-/* Responsive Design for Mobile */
+/* -------------------- Desktop vs Mobile Views -------------------- */
+/* By default (desktop): hide the mobile dropdown version */
+.mobile-view {
+    display: none;
+}
+
+/* By default (desktop): show the normal footer layout */
+.desktop-view {
+    display: block;
+}
+
+/* -------------------- Responsive Design (Mobile) -------------------- */
 @media (max-width: 600px) {
-    footer {
+    body {
         display: flex;
         flex-direction: column;
         justify-content: center;  /* vertical centering */
@@ -76,9 +87,18 @@ p {
         flex-direction: column;
         align-items: center;
     }
+
+    /* On small screens: hide desktop, show mobile dropdown footer */
+    .desktop-view {
+        display: none;
+    }
+
+    .mobile-view {
+        display: block;
+    }
 }
 
-/* Dropdown Button */
+/* -------------------- Dropdown Styles -------------------- */
 .dropbtn {
   background-color: rgb(1, 4, 15);
   color: white;
@@ -87,13 +107,11 @@ p {
   border: none;
 }
 
-/* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -103,7 +121,6 @@ p {
   z-index: 1;
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -111,32 +128,16 @@ p {
   display: block;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: rgb(0, 197, 174);} 
-
-.dropdown {
-  width: 30px;
-  height: 20px;
-  font-size: 16px;
-  padding: 8px;
+.dropdown-content a:hover {
+  background-color: #ddd;
 }
 
-.dropbtn {
-  width:  30px;
-  height: 20px;
-  font-size: 16px;
-  padding: 8px;
+/* Show dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
-.dropdown-content{
-  width: 30px;
-  height: 20px;
-  font-size: 16px;
-  padding: 8px;
+/* Change background when dropdown is open */
+.dropdown:hover .dropbtn {
+  background-color: rgb(0, 197, 174);
 }
