@@ -178,3 +178,139 @@ body{
 #MajorHeadings{
     font-size: 60px;
 }
+
+
+
+/* footer css */
+footer {
+    background-color: rgb(62, 62, 63);
+    font-family: 'Times New Roman', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+/* -------------------- Headings -------------------- */
+
+
+h4 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+/* -------------------- Paragraphs -------------------- */
+.paragraph-footer, .email {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0 50px 0 50px;
+}
+
+/* -------------------- Footer Container -------------------- */
+.site-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 18px;
+}
+
+/* Inner Footer Layout */
+#footer-format {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; /* ensures items wrap on small screens */
+    padding: 10px 20px;
+}
+
+/* Footer Email or Links */
+.email {
+    font-size: 12px;
+    margin: 5px 50px;
+    color: white;
+    text-align: center;
+}
+
+/* -------------------- Desktop vs Mobile Views -------------------- */
+/* By default (desktop): hide the mobile dropdown version */
+.mobile-view {
+    display: none;
+}
+
+/* By default (desktop): show the normal footer layout */
+.desktop-view {
+    display: block;
+}
+
+/* -------------------- Responsive Design (Mobile) -------------------- */
+@media (max-width: 800px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  /* vertical centering */
+        align-items: center;      /* horizontal centering */
+        min-height: 100vh;
+    }
+
+    .paragraph-footer, .email {
+        width: 90%;
+        margin: 5px auto;
+        text-align: center;
+    }
+
+    #footer-format {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* On small screens: hide desktop, show mobile dropdown footer */
+    .desktop-view {
+        display: none;
+    }
+
+    .mobile-view {
+        display: block;
+    }
+}
+
+/* -------------------- Dropdown Styles -------------------- */
+.dropbtn {
+  background-color: rgb(1, 4, 15);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change background when dropdown is open */
+.dropdown:hover .dropbtn {
+  background-color: rgb(0, 197, 174);
+}
