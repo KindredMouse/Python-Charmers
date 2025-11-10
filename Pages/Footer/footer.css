@@ -69,7 +69,7 @@ p {
 
 /* -------------------- Responsive Design (Mobile) -------------------- */
 @media (max-width: 600px) {
-    body {
+    footer {
         display: flex;
         flex-direction: column;
         justify-content: center;  /* vertical centering */
