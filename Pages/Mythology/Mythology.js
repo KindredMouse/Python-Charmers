@@ -1,6 +1,8 @@
+const container = document.querySelector("#MajorGodsButton")
+console.log(container)
 TestMyth.addEventListener("DOMContentLoaded",() =>{
-    const button = TestMyth.querySelector(".button");
-    const dropHolder = TestMyth.querySelector(".dropHolder");
+    const button = document.querySelector(".button");
+    const dropHolder = document.querySelector("#MajorGodsButton");
 
     button.addEventListener("click", ()=>{
         if (dropHolder.style.display === "block"){
