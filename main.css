@@ -231,6 +231,9 @@ img{
 
 /* Very small screens */
 @media (max-width: 480px) {
+    #header-push{
+        margin-top:50px;
+    }
     h1 {
         font-size: 1.5rem;
     }
