@@ -71,7 +71,7 @@ h3{
     margin:0;
     padding: 0;
     width: 200px;
-    background-image: url("Images/border_pattern.png");
+    background-image: url("../Images/border_pattern.png");
     background-repeat: repeat-y;
 }
 body{
@@ -84,7 +84,7 @@ body{
     width: 1200px;
     background-repeat: no-repeat;
     height: 5px;
-    background-image:url("Images/the-Line.png") ;
+    background-image:url("../Images/the-Line.png") ;
 }
 .Myth-Body{
     
