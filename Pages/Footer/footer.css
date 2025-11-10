@@ -1,4 +1,4 @@
-body {
+footer {
     background-color: rgb(62, 62, 63);
     font-family: 'Times New Roman', monospace;
     margin: 0;
@@ -70,7 +70,7 @@ h4 {
 
 /* -------------------- Responsive Design (Mobile) -------------------- */
 @media (max-width: 600px) {
-    body {
+    footer {
         display: flex;
         flex-direction: column;
         justify-content: center;  /* vertical centering */
